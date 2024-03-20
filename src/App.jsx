@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
-
+import { useLocation } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import './css/style.css'
 
 import './charts/ChartjsConfig'

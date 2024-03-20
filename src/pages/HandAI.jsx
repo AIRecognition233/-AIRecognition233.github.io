@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import Sidebar from '../partials/Sidebar'
-
+import Header from '../partials/Header'
 import FintechCard01 from '../partials/fintech/HandImageUploader'
 import FintechCard05 from '../partials/fintech/HandAnalysisResult'
 
@@ -24,6 +24,8 @@ function Fintech() {
     <div className="flex h-[100dvh] overflow-hidden">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+        {/*  Site header */}
+        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         <main className="grow">
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
             <div className="sm:flex sm:justify-between sm:items-center mb-5">
