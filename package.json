@@ -5,8 +5,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "host": "vite --host"
+    "host": "vite --host",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://AIRecognition233.github.io",
   "dependencies": {
     "@tailwindcss/forms": "^0.5.6",
     "axios": "^1.6.8",
@@ -22,6 +25,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.1.0",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.10"
